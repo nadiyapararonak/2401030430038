@@ -1,0 +1,94 @@
+/* Base styles */
+.register-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+    width: 100%;
+    font-family:
+      Inter,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 15px;
+    color: #000000;
+    font-weight: 500;
+  }
+  
+  .register-form {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    width: 100%;
+    padding: 46px 25px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .register-title {
+    color: rgba(37, 46, 255, 1);
+    font-size: 44px;
+    font-weight: 700;
+    align-self: center;
+    margin: 0;
+  }
+  
+  .form-group {
+    margin-top: 39px;
+  }
+  
+  .form-group:first-of-type {
+    margin-top: 129px;
+  }
+  
+  .form-input {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid rgba(96, 102, 255, 1);
+    padding: 10px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    box-sizing: border-box;
+  }
+  
+  .register-button {
+    align-self: stretch;
+    border-radius: 20px;
+    background-color: rgba(139, 84, 255, 1);
+    margin-top: 93px;
+    padding: 10px;
+    gap: 10px;
+    color: rgba(255, 255, 255, 1);
+    white-space: nowrap;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+  }
+  
+  .signin-button {
+    align-self: stretch;
+    border-radius: 20px;
+    background-color: rgba(96, 102, 255, 1);
+    margin-top: 34px;
+    padding: 10px;
+    gap: 10px;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+  }
+  
+  /* Focus states for better accessibility */
+  .form-input:focus,
+  .register-button:focus,
+  .signin-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(96, 102, 255, 0.3);
+  }
+  

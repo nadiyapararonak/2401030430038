@@ -1,0 +1,131 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:
+      "Inter",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Main container */
+  .homepage {
+    background-color: rgba(41, 24, 168, 1);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+    width: 100%;
+    padding-bottom: 11px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+  }
+  
+  /* Header image */
+  .header-image {
+    aspect-ratio: 1.2;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    border-radius: 16px;
+    align-self: stretch;
+  }
+  
+  /* Title */
+  .title {
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    font-family:
+      "Inter",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-weight: 500;
+    margin-top: 69px;
+  }
+  
+  /* Button container */
+  .button-container {
+    display: flex;
+    margin-top: 291px;
+    width: 226px;
+    max-width: 100%;
+    align-items: stretch;
+  }
+  
+  /* Button glow effects */
+  .button-glow-outer {
+    border-radius: 24px;
+    background-color: rgba(29, 165, 223, 0.16);
+    display: flex;
+    padding-left: 12px;
+    padding-right: 12px;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .button-glow-inner {
+    border-radius: 24px;
+    background-color: rgba(29, 165, 223, 0.2);
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.25);
+    display: flex;
+    flex-shrink: 0;
+    height: 84px;
+  }
+  
+  /* Next button */
+  .next-button {
+    border-radius: 24px;
+    background-color: rgba(29, 165, 223, 1);
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.32);
+    display: flex;
+    padding: 21px 51px;
+    align-items: center;
+    gap: 15px;
+    font-family:
+      "Poppins",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    white-space: nowrap;
+    letter-spacing: -0.2px;
+    line-height: 28px;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Button text */
+  .button-text {
+    align-self: stretch;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  /* Arrow icon */
+  .arrow-icon {
+    aspect-ratio: 0.87;
+    object-fit: contain;
+    object-position: center;
+    width: 21px;
+    align-self: stretch;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-shrink: 0;
+  }
+  

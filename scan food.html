@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camera Interface</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+        height: 100vh;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+      }
+
+      .camera-container {
+        width: 100%;
+        height: 100vh;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .camera-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.1) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
+      }
+
+      .icon {
+        color: white;
+        font-size: 24px;
+      }
+
+      .camera-main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.15);
+        position: relative;
+      }
+
+      .viewfinder {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 250px;
+        height: 250px;
+        border: 2px solid transparent;
+      }
+
+      @media (max-width: 640px) {
+        .viewfinder {
+          width: 200px;
+          height: 200px;
+        }
+      }
+
+      .corner-top-left {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: 4px solid white;
+        top: 0;
+        left: 0;
+        border-right: none;
+        border-bottom: none;
+      }
+
+      .corner-top-right {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: 4px solid white;
+        top: 0;
+        right: 0;
+        border-left: none;
+        border-bottom: none;
+      }
+
+      .corner-bottom-left {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: 4px solid white;
+        bottom: 0;
+        left: 0;
+        border-right: none;
+        border-top: none;
+      }
+
+      .corner-bottom-right {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: 4px solid white;
+        bottom: 0;
+        right: 0;
+        border-left: none;
+        border-top: none;
+      }
+
+      .camera-footer {
+        background-color: white;
+        border-top-left-radius: 32px;
+        border-top-right-radius: 32px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .gallery-button {
+        width: 40px;
+        height: 40px;
+        background-color: #fff8ee;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+      }
+
+      .capture-button-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .capture-button-outer {
+        width: 72px;
+        height: 72px;
+        background-color: #ffc0b8;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+      }
+
+      @media (max-width: 640px) {
+        .capture-button-outer {
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      .capture-button-inner {
+        width: 40px;
+        height: 40px;
+        background-color: #ff8473;
+        border-radius: 50%;
+        border: none;
+      }
+
+      @media (max-width: 640px) {
+        .capture-button-inner {
+          width: 32px;
+          height: 32px;
+        }
+      }
+
+      .rotate-button {
+        width: 40px;
+        height: 40px;
+        background-color: #fff8ee;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="camera-container">
+      <header class="camera-header">
+        <button class="close-button" aria-label="Close camera">
+          <i class="ti ti-x icon"></i>
+        </button>
+        <button class="flash-button" aria-label="Toggle flash">
+          <i class="ti ti-bolt icon"></i>
+        </button>
+      </header>
+
+      <main class="camera-main">
+        <div class="viewfinder" aria-label="Camera viewfinder">
+          <div class="corner-top-left"></div>
+          <div class="corner-top-right"></div>
+          <div class="corner-bottom-left"></div>
+          <div class="corner-bottom-right"></div>
+        </div>
+
+        <footer class="camera-footer">
+          <button class="gallery-button" aria-label="Open gallery">
+            <i class="ti ti-photo"></i>
+          </button>
+
+          <div class="capture-button-wrapper">
+            <button class="capture-button-outer" aria-label="Take photo">
+              <div class="capture-button-inner"></div>
+            </button>
+          </div>
+
+          <button class="rotate-button" aria-label="Switch camera">
+            <i class="ti ti-refresh"></i>
+          </button>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

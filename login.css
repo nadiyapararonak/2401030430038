@@ -1,0 +1,109 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+  }
+  
+  /* Login container */
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  /* Login form wrapper */
+  .login-form-wrapper {
+    width: 100%;
+    max-width: 407px;
+    padding: 73px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Login title */
+  .login-title {
+    color: #252eff;
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 107px;
+    margin-top: 0;
+  }
+  
+  /* Login form */
+  .login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+  }
+  
+  /* Form group */
+  .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Input container */
+  .input-container {
+    width: 100%;
+    height: 81px;
+    border-radius: 20px;
+    border: 2px solid #6066ff;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Form input */
+  .form-input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.7);
+    border: none;
+    outline: none;
+  }
+  
+  /* Button container */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 77px;
+  }
+  
+  /* Login button */
+  .login-button {
+    width: 156px;
+    height: 77px;
+    background-color: #252eff;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for button */
+  .login-button:hover {
+    background-color: #1a22e0;
+  }
+  
+  /* Focus styles for better accessibility */
+  .form-input:focus {
+    outline: none;
+  }
+  
+  .input-container:focus-within {
+    border-color: #252eff;
+    box-shadow: 0 0 0 2px rgba(37, 46, 255, 0.2);
+  }
+  

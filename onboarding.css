@@ -1,0 +1,181 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family:
+    Signika,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+/* Onboarding container */
+.onboarding-container {
+  background-color: #ffffff;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  padding-bottom: 64px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+}
+
+/* App bar at the top */
+.app-bar {
+  background-color: #fff;
+  align-self: stretch;
+  display: flex;
+  width: 100%;
+  padding: 12px 39px;
+  align-items: stretch;
+  gap: 100px;
+}
+
+.time {
+  color: #000;
+  text-align: center;
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  font-family:
+    SF Pro Text,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.24px;
+}
+
+.status-icons {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: stretch;
+  gap: 5px;
+  flex: 1;
+}
+
+.signal-icon {
+  aspect-ratio: 1.7;
+  object-fit: contain;
+  object-position: center;
+  width: 17px;
+  fill: #000;
+  align-self: start;
+  flex-shrink: 0;
+}
+
+.battery-icon {
+  aspect-ratio: 1.36;
+  object-fit: contain;
+  object-position: center;
+  width: 15px;
+  fill: #000;
+  flex-shrink: 0;
+}
+
+/* Logo */
+.logo {
+  aspect-ratio: 2.42;
+  object-fit: contain;
+  object-position: center;
+  width: 58px;
+  margin-top: 44px;
+}
+
+/* Title */
+.title {
+  color: #000000;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.24px;
+  text-align: center;
+  margin-top: 372px;
+  margin-bottom: 0;
+}
+
+/* Description */
+.description {
+  color: #000000;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.24px;
+  text-align: center;
+  margin-top: 8px;
+  width: 272px;
+}
+
+/* Pagination dots */
+.pagination-dots {
+  display: flex;
+  margin-top: 12px;
+  width: 52px;
+  align-items: start;
+  gap: 4px;
+}
+
+.dot {
+  border-radius: 16px;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.dot.active {
+  background-color: rgba(255, 132, 115, 1);
+  width: 20px;
+  height: 10px;
+}
+
+.dot:not(.active) {
+  background-color: rgba(255, 192, 184, 1);
+  width: 12px;
+  height: 8px;
+}
+
+/* Get Started button */
+.start-button {
+  border: none;
+  border-radius: 24px;
+  background-color: rgba(145, 199, 136, 1);
+  margin-top: 42px;
+  width: 100%;
+  max-width: 290px;
+  padding: 21px 70px;
+  font-family:
+    Signika,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  letter-spacing: 1.25px;
+  cursor: pointer;
+}
+
+/* Login text */
+.login-text {
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+.login-prompt {
+  color: rgba(124, 124, 124, 1);
+}
+
+.login-link {
+  color: rgba(145, 199, 136, 1);
+  font-weight: 600;
+  cursor: pointer;
+}

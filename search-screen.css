@@ -1,0 +1,203 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "SF Pro Text", sans-serif;
+  }
+  
+  .mobile-container {
+    width: 375px;
+    height: 812px;
+    position: relative;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: none;
+  }
+  
+  /* Status bar */
+  .status-bar {
+    height: 44px;
+    padding: 0 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .time {
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+  }
+  
+  .status-icons {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  
+  .signal-icon,
+  .wifi-icon,
+  .battery-icon {
+    width: 17px;
+    height: 11px;
+    background-color: #000;
+  }
+  
+  /* Navigation header */
+  .navigation-header {
+    padding: 13px 24px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .page-title {
+    color: #0d0d0d;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.6px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Main content */
+  .main-content {
+    padding: 0 24px;
+    margin-top: 8px;
+  }
+  
+  .search-container {
+    width: 327px;
+    height: 64px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    position: relative;
+    background-color: #f4f4f4;
+  }
+  
+  .search-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+  
+  .search-text {
+    color: #666;
+    font-family: "Signika", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+  }
+  
+  .clear-button {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Bottom navigation */
+  .bottom-navigation {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 24px;
+  }
+  
+  .nav-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .nav-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .camera-button {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .camera-circle {
+    width: 48px;
+    height: 48px;
+    fill: #91c788;
+  }
+  
+  .camera-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .favorites-button {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .favorites-icon {
+    width: 30px;
+    height: 29px;
+    fill: #91c788;
+  }
+  
+  /* Media queries */
+  @media (max-width: 991px) {
+    .mobile-container {
+      max-width: 991px;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .mobile-container {
+      max-width: 640px;
+    }
+  
+    .main-content {
+      padding: 0 16px;
+    }
+  
+    .search-container {
+      width: 100%;
+    }
+  
+    .bottom-navigation {
+      padding: 0 16px;
+    }
+  }
+  
